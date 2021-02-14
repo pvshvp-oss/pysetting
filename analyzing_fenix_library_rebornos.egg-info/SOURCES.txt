@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+analyzing_fenix_library_rebornos.egg-info/PKG-INFO
+analyzing_fenix_library_rebornos.egg-info/SOURCES.txt
+analyzing_fenix_library_rebornos.egg-info/dependency_links.txt
+analyzing_fenix_library_rebornos.egg-info/requires.txt
+analyzing_fenix_library_rebornos.egg-info/top_level.txt

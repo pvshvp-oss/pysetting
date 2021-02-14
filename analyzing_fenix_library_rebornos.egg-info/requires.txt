@@ -1,0 +1,3 @@
+psutil
+fenix-library.running
+fenix-library.configuration
