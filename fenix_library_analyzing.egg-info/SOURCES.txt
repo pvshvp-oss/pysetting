@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+fenix_library_analyzing.egg-info/PKG-INFO
+fenix_library_analyzing.egg-info/SOURCES.txt
+fenix_library_analyzing.egg-info/dependency_links.txt
+fenix_library_analyzing.egg-info/requires.txt
+fenix_library_analyzing.egg-info/top_level.txt

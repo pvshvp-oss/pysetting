@@ -17,8 +17,8 @@ import functools
 from typing import Dict, List, Any, Optional, Union
 
 # FENIX IMPORTS
-from library.running import BatchJob, LogMessage, Function, Command, LoggingHandler
-from library.configuration import JSONConfiguration
+from fenix_library.running import BatchJob, LogMessage, Function, Command, LoggingHandler
+from fenix_library.configuration import JSONConfiguration
 
 class SystemAnalyzer(BatchJob):
     """

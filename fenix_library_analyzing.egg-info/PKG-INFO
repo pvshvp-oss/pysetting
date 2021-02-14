@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
-Name: analyzing-fenix-library-rebornos
+Name: fenix-library-analyzing
 Version: 0.0.1
 Summary: The analysis library for the Fenix Installer
-Home-page: https://gitlab.com/rebornos-team/fenix/fenix-libraries/fenix-library-analyzing
+Home-page: https://gitlab.com/rebornos-team/fenix/libraries/analyzing
 Author: Shivanand Pattanshetti
 Author-email: shivanand.pattanshetti@gmail.com
 License: UNKNOWN
