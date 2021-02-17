@@ -1,0 +1,5 @@
+documentation/build/**
+*.pyc
+__pycache__
+*.glade~
+work/*

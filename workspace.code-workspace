@@ -4,5 +4,22 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"python.pythonPath": "/usr/bin/python",
+		"editor.showFoldingControls": "always",
+		"files.autoGuessEncoding": true,
+		"git.postCommitCommand": "sync",
+		"editor.wordWrap": "on",
+		"restructuredtext.confPath": "${workspaceFolder}/documentation/source"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"njpwerner.autodocstring",
+			"ms-pyright.pyright",
+			"lextudio.restructuredtext",
+			"yzhang.markdown-all-in-one",
+			"davidanson.vscode-markdownlint",
+		]
+	},
 }
