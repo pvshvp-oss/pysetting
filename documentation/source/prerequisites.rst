@@ -1,7 +1,7 @@
 .. _prerequisites:
 
-Prerequisites - What you need to run Fenix Library - Analyzing
-**************************************************************
+Prerequisites - What you need to run Fenix Library - Configuration
+************************************************************************
 
 **Note**: Currently, the **Fenix Library** only supports **Arch Linux** and its derivatives (like *RebornOS*, *EndeavourOS*, *Manjaro*, etc.).
 

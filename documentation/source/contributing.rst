@@ -1,7 +1,7 @@
 .. _contributing:
 
-How to Contribute to Fenix Library - Analyzing
-**********************************************
+How to Contribute to Fenix Library - Configuration
+*****************************************************
 
 Testing
 =======
@@ -23,7 +23,7 @@ Testing
    
     .. code-block:: bash
 
-        git clone https://gitlab.com/rebornos-team/libraries/analyzing.git
+        git clone https://gitlab.com/rebornos-team/libraries/configuration.git
     
 4. **Build**: **Change to the downloaded directory** and run the below
 
@@ -46,7 +46,7 @@ Development
    
 3. **Git Repository**: *Fork* or *clone* the project from its **Gitlab** page and edit the source code of the project. For the *Git* URL, please refer to the **Testing** section above. 
    
-4. **Code Editor**: Make sure that you have a code editor installed (like :code:`vscode`, :code:`atom`, :code:`gedit`, or an IDE like :code:`pycharm`). We recommend *VSCode* since if you open the file :code:`analyzing.code-workspace` (found in the directory :code:`analyzing/`) in *VSCode*, the :underlined:`recommended` *extensions* and *settings* are preconfigured to make your job easy and less error prone.
+4. **Code Editor**: Make sure that you have a code editor installed (like :code:`vscode`, :code:`atom`, :code:`gedit`, or an IDE like :code:`pycharm`). We recommend *VSCode* since if you open the file :code:`configuration.code-workspace` (found in the directory :code:`configuration/`) in *VSCode*, the :underlined:`recommended` *extensions* and *settings* are preconfigured to make your job easy and less error prone.
 
     .. code-block:: bash
 
