@@ -20,27 +20,6 @@ sys.path.insert(
     )
 )
 
-# Only required for documentation to work on Docker
-sys.path.append(
-    os.path.join(
-        os.path.abspath(
-            Path(__file__).parents[2] # Get the parent directory three levels up
-        ),
-        "fenix_library"
-    )
-)
-sys.path.append(
-    os.path.join(
-        os.path.join(
-            os.path.abspath(
-                Path(__file__).parents[2] # Get the parent directory three levels up
-            ),
-            "fenix_library"
-        ),
-        "analyzing"
-    )
-)
-#----------------------------------------------------------------------------------------
 sys.path.append(
     os.path.dirname(__file__)
 )
@@ -93,6 +72,7 @@ extensions = [
 ]
 
 autosummary_generate = True
+graphviz_output_format = 'svg'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

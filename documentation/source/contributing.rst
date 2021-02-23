@@ -12,14 +12,20 @@ Testing
     Complete the documentation
 
 1. Ensure that the instructions in :ref:`prerequisites` are followed.
-   
-2. Download the source from the *Git* repository
+
+2. 2. Install :code:`graphviz`, and :code:`fontconfig` for documentation generation
+
+    .. code-block:: bash
+            
+        sudo pacman -S --needed graphviz fontconfig
+  
+3. Download the source from the *Git* repository
    
     .. code-block:: bash
 
         git clone https://gitlab.com/rebornos-team/libraries/analyzing.git
     
-3. **Change to the downloaded directory** and run the below
+4. **Change to the downloaded directory** and run the below
 
     .. code-block:: bash
 
