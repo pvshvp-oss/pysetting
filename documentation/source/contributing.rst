@@ -31,7 +31,7 @@ Testing
 
         python -m build
 
-4. **Install**: Install the local copy of the package
+5. **Install**: Install the local copy of the package
 
     .. code-block:: bash
 
