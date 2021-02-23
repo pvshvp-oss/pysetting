@@ -42,3 +42,12 @@ pages:
     - public
   only:
   - master
+
+run:
+  script:
+    - pip install twine
+    - rm -rf build dist *.egg-info # cleanup old files
+    - python -m build # build the package
+    - TWINE_PASSWORD=${CI_PYPI_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload dist/*
+  when: 
+    - manual
