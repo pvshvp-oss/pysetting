@@ -56,5 +56,3 @@ run:
   - default
   when: manual
   allow_failure: false
-false
-  when: manual
