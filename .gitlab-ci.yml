@@ -49,5 +49,4 @@ run:
     - rm -rf build dist *.egg-info # cleanup old files
     - python -m build # build the package
     - TWINE_PASSWORD=${CI_PYPI_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload dist/*
-  when: 
-    - manual
+  when: manual
