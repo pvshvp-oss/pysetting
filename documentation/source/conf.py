@@ -19,11 +19,9 @@ sys.path.insert(
         Path(__file__).parents[2] # Get the parent directory three levels up
     )
 )
-
 sys.path.append(
     os.path.dirname(__file__)
 )
-print(sys.path)
 
 # CUSTOM IMPORTS
 
