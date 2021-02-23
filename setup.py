@@ -12,6 +12,12 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://gitlab.com/rebornos-team/fenix/libraries/analyzing",
+    download_url="https://pypi.org/project/fenix-library-analyzing/",
+    project_urls={
+        'Documentation': 'https://rebornos-team.gitlab.io/fenix/libraries/analyzing/',
+        'Source': 'https://gitlab.com/rebornos-team/fenix/libraries/analyzing',
+        'Tracker': 'https://gitlab.com/rebornos-team/fenix/libraries/analyzing/issues',
+    },
     classifiers=[
         "Programming Language :: Python :: 3.9",
         "Development Status :: 2 - Pre-Alpha",
@@ -27,6 +33,7 @@ setuptools.setup(
         "Topic :: System :: Monitoring",
     ],
     packages=setuptools.find_namespace_packages(include=['fenix_library.*']),
+    namespace_packages="fenix_library",
     python_requires='>=3.6',
     install_requires=[
         'psutil',
