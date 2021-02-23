@@ -1,4 +1,5 @@
 documentation/build/*
+documentation/source/_autosummary
 *.pyc
 __pycache__
 *.glade~
