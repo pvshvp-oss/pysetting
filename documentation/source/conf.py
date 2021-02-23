@@ -19,6 +19,8 @@ sys.path.insert(
         Path(__file__).parents[2] # Get the parent directory three levels up
     )
 )
+
+# Only required for documentation to work on Docker
 sys.path.append(
     os.path.join(
         os.path.abspath(
@@ -27,6 +29,18 @@ sys.path.append(
         "fenix_library"
     )
 )
+sys.path.append(
+    os.path.join(
+        os.path.join(
+            os.path.abspath(
+                Path(__file__).parents[2] # Get the parent directory three levels up
+            ),
+            "fenix_library"
+        ),
+        "analyzing"
+    )
+)
+#----------------------------------------------------------------------------------------
 sys.path.append(
     os.path.dirname(__file__)
 )
