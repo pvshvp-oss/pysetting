@@ -8,8 +8,8 @@ Testing
 
 .. todo::
     
-    Add testing module
-    Complete the documentation
+    * Add a testing module for testing the library
+    * Complete the documentation
 
 1. **Prerequisites**: Ensure that the instructions in :ref:`prerequisites` are followed.
 
