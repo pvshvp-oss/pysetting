@@ -33,7 +33,9 @@ setuptools.setup(
         "Topic :: System :: Monitoring",
     ],
     packages=setuptools.find_namespace_packages(include=['fenix_library.*']),
-    namespace_packages="fenix_library",
+    namespace_packages=[
+        "fenix_library"
+    ],
     python_requires='>=3.6',
     install_requires=[
         'psutil',
