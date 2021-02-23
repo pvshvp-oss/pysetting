@@ -1,0 +1,30 @@
+image: python:3.9-alpine
+
+test:
+  stage: test
+  script:
+  - apk add git # for git based dependencies
+  - apk add build-base # for using `make`
+  - apk add linux-headers # for `psutil`, which is a dependency of `fenix_library-analyzing`. pip install does not automatically handle all the dependencies of psutil
+  - rm -rf documentation/build/ # clean the previous build
+  - cd documentation && make html; cd .. # run Sphinx to generate documentation as html. Information on build is in the makefile and in `conf.py`
+  - cp -r documentation/build/html/. public/ # copy the html pages to the public directory
+  only:
+  - branches
+  except:
+  - master
+
+pages:
+  stage: deploy
+  script:
+  - apk add git # for git based dependencies
+  - apk add build-base # for using `make`
+  - apk add linux-headers # for `psutil`, which is a dependency of `fenix_library-analyzing`. pip install does not automatically handle all the dependencies of psutil
+  - rm -rf documentation/build/ # clean the previous build
+  - cd documentation && make html; cd .. # run Sphinx to generate documentation as html. Information on build is in the makefile and in `conf.py`
+  - cp -r documentation/build/html/. public/ # copy the html pages to the public directory
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
