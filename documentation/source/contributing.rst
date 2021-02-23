@@ -11,21 +11,27 @@ Testing
     Add testing module
     Complete the documentation
 
-1. Ensure that the instructions in :ref:`prerequisites` are followed.
+1. **Prerequisites**: Ensure that the instructions in :ref:`prerequisites` are followed.
 
-2. 2. Install :code:`graphviz`, and :code:`fontconfig` for documentation generation
+2. **Other packages**: Install :code:`graphviz`, and :code:`fontconfig` for documentation generation
 
     .. code-block:: bash
             
         sudo pacman -S --needed graphviz fontconfig
   
-3. Download the source from the *Git* repository
+3. **Download** Clone the source from the *Git* repository
    
     .. code-block:: bash
 
         git clone https://gitlab.com/rebornos-team/libraries/analyzing.git
     
-4. **Change to the downloaded directory** and run the below
+4. **Build**: **Change to the downloaded directory** and run the below
+
+    .. code-block:: bash
+
+        python -m build
+
+4. **Install**: Install the local copy of the package
 
     .. code-block:: bash
 
