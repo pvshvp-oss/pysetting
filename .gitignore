@@ -1,4 +1,4 @@
-documentation/build/**
+documentation/build/*
 *.pyc
 __pycache__
 *.glade~
