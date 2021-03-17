@@ -10,8 +10,8 @@ name = "pypi"
 [dev-packages]
 # For documentation of imports
 # For documentation tools
-fenix-library-running = "*"
-fenix-library-configuration = "*"
+fenix-library-running = {git = "https://www.gitlab.com/rebornos-team/fenix/libraries/running.git"}
+fenix-library-configuration = {git = "https://www.gitlab.com/rebornos-team/fenix/libraries/configuration.git"}
 sphinx = "*"
 sphinx-rtd-theme = "*"
 sphinxcontrib-mermaid = "*"
