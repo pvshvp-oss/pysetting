@@ -1,0 +1,38 @@
+# Maintainer: Shivanand Pattanshetti <shivanandvp@rebornos.org>
+pkgname='python-fenix_library-configuration-git'
+pkgver=0.0.3
+pkgrel=1
+pkgdesc='The fenix_library-configuration package consists of the tools required to read and write JSON configuration files.'
+arch=('any')
+url='https://gitlab.com/rebornos-team/fenix/libraries/configuration'
+license=('AGPL3')
+groups=('fenix_library')
+depends=('python')
+makedepends=('git'
+             'python-setuptools'
+             'python-pipenv')
+provides=("${pkgname}")
+conflicts=("${pkgname}")
+replaces=()
+backup=()
+options=()
+install=
+source=()
+noextract=()
+md5sums=('SKIP')
+
+prepare() {
+    cd '..' && rm -rf "pkg/*" "src/*" "*.pkg.tar"
+}
+
+build() {
+    cd '../../..' && python setup.py build
+}
+
+check() {
+    :
+}
+
+package() {
+    cd '../../..' && python setup.py install --root="$pkgdir" --optimize=1 --skip-build && rm -rf build fenix_library_running.egg-info
+}

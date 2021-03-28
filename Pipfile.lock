@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "52adc4b1a591ae8262485dff5ed6eace5ed65333b24127dcd59fcc3615509fe1"
+            "sha256": "9d980fb3735b296015d02eafc1340b005ce9147b47b14c40bd6792e030e8569d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -32,6 +32,14 @@
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==2.9.0"
         },
+        "build": {
+            "hashes": [
+                "sha256:85123bf327404e68142b1eb2a8298b052e984ad5b12738549688371e6337c73a",
+                "sha256:88bc8ff6cb948247bebd5b3bf6b8b71d10fd93bce848f9d2fd9b28cbdd40ae8b"
+            ],
+            "index": "pypi",
+            "version": "==0.3.1.post1"
+        },
         "certifi": {
             "hashes": [
                 "sha256:1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c",
@@ -56,12 +64,14 @@
             "version": "==0.16"
         },
         "fenix-library-configuration": {
-            "git": "https://www.gitlab.com/rebornos-team/fenix/libraries/configuration.git",
-            "ref": "6f17c536efb03de2bf3b93e896f47e80a5fc2645"
+            "editable": true,
+            "git": "https://gitlab.com/rebornos-team/fenix/libraries/configuration.git",
+            "ref": "128afaee89f31647284886bd849c20fb0ae10ef8"
         },
         "fenix-library-running": {
-            "git": "https://www.gitlab.com/rebornos-team/fenix/libraries/running.git",
-            "ref": "a1b86d56f1f76e64ea288316c87b9c05f0ec37c5"
+            "editable": true,
+            "git": "https://gitlab.com/rebornos-team/fenix/libraries/running.git",
+            "ref": "cea487f3afac5d08380331ed564f76fbdc39876b"
         },
         "idna": {
             "hashes": [
@@ -153,6 +163,13 @@
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==20.9"
         },
+        "pep517": {
+            "hashes": [
+                "sha256:ac59f3f6b9726a49e15a649474539442cf76e0697e39df4869d25e68e880931b",
+                "sha256:eba39d201ef937584ad3343df3581069085bacc95454c80188291d5b3ac7a249"
+            ],
+            "version": "==0.10.0"
+        },
         "pygments": {
             "hashes": [
                 "sha256:2656e1a6edcdabf4275f9a3640db59fd5de107d88e8663c5d4e9a0fa62f77f94",
@@ -166,7 +183,7 @@
                 "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1",
                 "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"
             ],
-            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2'",
+            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==2.4.7"
         },
         "pytz": {
@@ -193,11 +210,11 @@
         },
         "sphinx": {
             "hashes": [
-                "sha256:672cfcc24b6b69235c97c750cb190a44ecd72696b4452acaf75c2d9cc78ca5ff",
-                "sha256:ef64a814576f46ec7de06adf11b433a0d6049be007fefe7fd0d183d28b581fac"
+                "sha256:3f01732296465648da43dec8fb40dc451ba79eb3e2cc5c6d79005fd98197107d",
+                "sha256:ce9c228456131bab09a3d7d10ae58474de562a6f79abb3dc811ae401cf8c1abc"
             ],
             "index": "pypi",
-            "version": "==3.5.2"
+            "version": "==3.5.3"
         },
         "sphinx-rtd-theme": {
             "hashes": [
@@ -262,6 +279,14 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==1.1.4"
+        },
+        "toml": {
+            "hashes": [
+                "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b",
+                "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"
+            ],
+            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==0.10.2"
         },
         "urllib3": {
             "hashes": [
