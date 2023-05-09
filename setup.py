@@ -5,9 +5,9 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="fenix_library-configuration",
-    version="0.0.3",
-    author="Shivanand Pattanshetti",
-    author_email="shivanandvp@rebornos.org",
+    version="0.0.5",
+    author="shivanandvp",
+    author_email="shivanandvp.oss@gmail.com",
     description="A library for parsing and storing settings and configurations",
     long_description=long_description,
     long_description_content_type="text/markdown",

@@ -1,6 +1,6 @@
 # Maintainer: Shivanand Pattanshetti <shivanandvp@rebornos.org>
 pkgname='python-fenix_library-configuration'
-pkgver=0.0.3
+pkgver=0.0.5
 pkgrel=1
 pkgdesc='The fenix_library-configuration package consists of the tools required to read and write JSON configuration files.'
 arch=('any')
