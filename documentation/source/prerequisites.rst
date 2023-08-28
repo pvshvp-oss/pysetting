@@ -1,9 +1,9 @@
 .. _prerequisites:
 
-Prerequisites - What you need to run Fenix Library - Configuration
-************************************************************************
+Prerequisites - What you need to run pysetting
+**********************************************
 
-**Note**: Currently, the **Fenix Library** only supports **Arch Linux** and its derivatives (like *RebornOS*, *EndeavourOS*, *Manjaro*, etc.).
+**Note**: Currently, **pysetting** only supports **Arch Linux** and its derivatives (like *RebornOS*, *EndeavourOS*, *Manjaro*, etc.).
 
 **Warning**: Please skip this section if you have already run the setup script successfully.
 

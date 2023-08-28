@@ -1,10 +1,27 @@
-documentation/build/*
-documentation/source/_autosummary
+# Cache
 *.pyc
 __pycache__
-*.glade~
+
+# Build
 build/*
-# dist/*
-# *.egg-info/*
-.vscode
+dist/*
+*.egg-info/*
+*.egg-info
+*.whl
+
+# Build - Docs
+documentation/build/*
+documentation/source/_autosummary
+
+# Logs
 *.log
+
+# Packaging
+packaging/**/pkg
+packaging/**/src
+packaging/**/*.tar*
+packaging/**/python-pysetting-git/python-pysetting
+packaging/**/python-pysetting/python-pysetting*
+
+# VSCode
+.vscode

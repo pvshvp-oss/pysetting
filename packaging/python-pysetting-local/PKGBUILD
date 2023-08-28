@@ -1,0 +1,43 @@
+#! /usr/bin/env sh
+
+# Maintainer: shivanandvp <shivanandvp.oss@gmail.com, shivanandvp@rebornos.org>
+
+PROJECT_NAME="pysetting"
+PACKAGE_NAME_STUB="python-$PROJECT_NAME"
+provides=("$PACKAGE_NAME_STUB")
+depends=('python>=3.10')
+arch=('any')
+pkgdesc='A python library for parsing and storing settings and configurations.'
+url="https://github.com/shivanandvp/$PROJECT_NAME"
+license=('MPL-2.0') 
+
+# -------- # 
+# Specific #
+# -------- #
+PKGVER_STUB=0.0.12
+pkgver=0.0.12.2023_08_28T03_52_10_05_00
+pkgrel=1
+pkgname="$PACKAGE_NAME_STUB-local"
+conflicts=("$PACKAGE_NAME_STUB" "$PACKAGE_NAME_STUB-git")
+makedepends=('git' 'python-setuptools' 'python-pipenv')
+source=()
+sha256sums=()
+prepare() {
+    export PROJECT_DIRECTORY="$(dirname -- "$(dirname -- "$(dirname -- "$(pwd)")")")"
+}
+pkgver() {
+    echo "$PKGVER_STUB.$(date -Is | tr '\:\-\+\;' '_')"
+}
+# -------- #
+
+build() {   
+    (   cd "$PROJECT_DIRECTORY" \
+        && python setup.py build
+    )
+}
+package() {
+    install -Dm644 "$PROJECT_DIRECTORY/LICENSE" "$pkgdir/usr/share/licenses/$PACKAGE_NAME_STUB/LICENSE"
+    (   cd "$PROJECT_DIRECTORY" \
+        && python setup.py install --root="$pkgdir" --optimize=1 --skip-build
+    )
+}

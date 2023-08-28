@@ -13,8 +13,7 @@ build = "*"
 sphinx = "*"
 sphinx-rtd-theme = "*"
 sphinxcontrib-mermaid = "*"
-fenix-library-running = {editable = true, git = "https://gitlab.com/rebornos-team/fenix/libraries/running.git"}
-fenix-library-configuration = {editable = true, git = "https://gitlab.com/rebornos-team/fenix/libraries/configuration.git"}
+pysetting = {editable = true, git = "https://github.com/shivanandvp/pysetting.git"}
 
 [requires]
-python_version = "3.9"
+python_version = ">=3.10"

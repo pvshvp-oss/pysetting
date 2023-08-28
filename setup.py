@@ -4,24 +4,24 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="fenix_library-configuration",
+    name="pysetting",
     version="0.0.5",
     author="shivanandvp",
     author_email="shivanandvp.oss@gmail.com",
-    description="A library for parsing and storing settings and configurations",
+    description="A python library for parsing and storing settings and configurations.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://gitlab.com/rebornos-team/fenix/libraries/configuration",
-    download_url="https://pypi.org/project/fenix-library-configuration/",
+    url="https://github.com/shivanandvp/pysetting",
+    download_url="https://pypi.org/project/pysetting/",
     project_urls={
-        'Documentation': 'https://rebornos-team.gitlab.io/fenix/libraries/configuration/',
-        'Source': 'https://gitlab.com/rebornos-team/fenix/libraries/configuration',
-        'Tracker': 'https://gitlab.com/rebornos-team/fenix/libraries/configuration/issues',
+        'Documentation': 'https://github.com/shivanandvp/pysetting/',
+        'Source': 'https://github.com/shivanandvp/pysetting',
+        'Tracker': 'https://github.com/shivanandvp/pysetting/issues',
     },
     classifiers=[
-        "Programming Language :: Python :: 3.9",
-        "Development Status :: 3 - Alpha",
-        "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+        "Programming Language :: Python :: 3.11",
+        "Development Status :: 4 - Beta",
+        "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
         "Operating System :: POSIX :: Linux",
         "Intended Audience :: Developers",
         "Intended Audience :: System Administrators",
@@ -31,9 +31,5 @@ setuptools.setup(
         "Topic :: System :: Systems Administration",
         "Topic :: Utilities",
     ],
-    packages=setuptools.find_namespace_packages(include=['fenix_library.*']),
-    namespace_packages=[
-        "fenix_library"
-    ],
-    python_requires='>=3.6'
+    python_requires='>=3.10'
 )
