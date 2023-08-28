@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pysetting",
-    version="0.0.5",
+    version="0.0.6",
     author="shivanandvp",
     author_email="shivanandvp.oss@gmail.com",
     description="A python library for parsing and storing settings and configurations.",
