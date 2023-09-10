@@ -23,7 +23,7 @@ Testing
    
     .. code-block:: bash
 
-        git clone https://github.com/shivanandvp/pysetting.git
+        git clone https://github.com/shiva-patt-oss/pysetting.git
     
 4. **Build**: **Change to the downloaded directory** and run the below
 
