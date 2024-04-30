@@ -5,7 +5,7 @@
 PROJECT_NAME="pysetting"
 PACKAGE_NAME_STUB="python-$PROJECT_NAME"
 provides=("$PACKAGE_NAME_STUB")
-depends=('python>=3.10')
+depends=('python>=3.12')
 arch=('any')
 pkgdesc='A python library for parsing and storing settings and configurations.'
 url="https://github.com/pvshvp-oss/$PROJECT_NAME"

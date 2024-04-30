@@ -19,7 +19,7 @@ setuptools.setup(
         'Tracker': 'https://github.com/pvshvp-oss/pysetting/issues',
     },
     classifiers=[
-        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Development Status :: 4 - Beta",
         "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
         "Operating System :: POSIX :: Linux",
