@@ -7,7 +7,7 @@
 Welcome to pysetting package documentation!
 *******************************************
 
-Project page: https://github.com/shiva-patt-oss/pysetting>`_
+Project page: https://github.com/pvshvp-oss/pysetting>`_
 
 ------------
 

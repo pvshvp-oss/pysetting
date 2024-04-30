@@ -24,5 +24,5 @@ The "main" branch (recommended)
 
 .. code-block:: bash
 
-    sudo pip install git+https://github.com/shiva-patt-oss/pysetting@main
+    sudo pip install git+https://github.com/pvshvp-oss/pysetting@main
 

@@ -13,7 +13,7 @@ build = "*"
 sphinx = "*"
 sphinx-rtd-theme = "*"
 sphinxcontrib-mermaid = "*"
-pysetting = {editable = true, git = "https://github.com/shiva-patt-oss/pysetting.git"}
+pysetting = {editable = true, git = "https://github.com/pvshvp-oss/pysetting.git"}
 
 [requires]
 python_version = ">=3.10"
