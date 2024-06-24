@@ -15,7 +15,7 @@ Build-Depends: debhelper (>=12~),
 Package: python3-pysetting-local
 Architecture: all
 Homepage: https://github.com/pvshvp-oss/pysetting
-Depends: python3 (>= 3.12),
+Depends: python3 (>= 3.11),
          ${python:Depends},
          ${misc:Depends}
 Conflicts: python3-pysetting, python3-pysetting-git
