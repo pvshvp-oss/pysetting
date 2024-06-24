@@ -22,6 +22,7 @@ packaging/**/src
 packaging/**/*.tar*
 packaging/**/python-pysetting-git/python-pysetting
 packaging/**/python-pysetting/python-pysetting*
+packaing/debian/**/python3-pysetting_*
 
 # VSCode
 .vscode
