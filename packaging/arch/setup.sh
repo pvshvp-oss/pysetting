@@ -1,7 +1,7 @@
 #! /usr/bin/env sh
 
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
-PROJECT_DIRECTORY="$(dirname -- "$SCRIPT_DIRECTORY")"
+PROJECT_DIRECTORY="$(dirname -- "$(dirname -- "$SCRIPT_DIRECTORY")")"
 BUILD_DIRECTORY="$PROJECT_DIRECTORY"/build
 PACKAGE_DIRECTORY_STUB="python-pysetting"
 MODE="$(echo "$1" | tr "[:upper:]" "[:lower:]")"
@@ -24,12 +24,6 @@ if [ "$MODE" != "local" ]; then
     set +o xtrace
 fi
 
-if ls "$PACKAGE_DIRECTORY"/*.pkg.tar.* > /dev/null 2>&1;then
-    set -o xtrace
-    sudo pacman -U "$@" "$PACKAGE_DIRECTORY"/*.pkg.tar.*
-    set +o xtrace
-else
-    set -o xtrace
-    sh "$SCRIPT_DIRECTORY"/build_package.sh "$MODE" --install "$@"
-    set +o xtrace
-fi
+set -o xtrace
+sh "$SCRIPT_DIRECTORY"/build_package.sh "$MODE" --install "$@"
+set +o xtrace

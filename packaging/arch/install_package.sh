@@ -1,7 +1,7 @@
 #! /usr/bin/env sh
 
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
-PROJECT_DIRECTORY="$(dirname -- "$SCRIPT_DIRECTORY")"
+PROJECT_DIRECTORY="$(dirname -- "$(dirname -- "$SCRIPT_DIRECTORY")")"
 BUILD_DIRECTORY="$PROJECT_DIRECTORY"/build
 PACKAGE_DIRECTORY_STUB="python-pysetting"
 MODE="$(echo "$1" | tr "[:upper:]" "[:lower:]")"
@@ -22,29 +22,14 @@ if [ "$MODE" != "local" ]; then
         rm -rf $(ls | grep -v PKGBUILD)
     )
     set +o xtrace
-
-    ( # Create subshell to nullify directory changes on exit
-        # Run makepkg
-        set -o xtrace
-        cd "$PACKAGE_DIRECTORY" && \
-        makepkg \
-            --cleanbuild \
-            --force \
-            --syncdeps \
-            --clean \
-            "$@"
-        set +o xtrace
-    )
-else
-    ( # Create subshell to nullify directory changes on exit
-        # Run makepkg
-        set -o xtrace
-        cd "$PACKAGE_DIRECTORY" && \
-        makepkg \
-            --force \
-            --syncdeps \
-            "$@"
-        set +o xtrace
-    )
 fi
 
+if ls "$PACKAGE_DIRECTORY"/*.pkg.tar.* > /dev/null 2>&1;then
+    set -o xtrace
+    sudo pacman -U "$@" "$PACKAGE_DIRECTORY"/*.pkg.tar.*
+    set +o xtrace
+else
+    set -o xtrace
+    sh "$SCRIPT_DIRECTORY"/build_package.sh "$MODE" --install "$@"
+    set +o xtrace
+fi

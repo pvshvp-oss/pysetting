@@ -14,22 +14,19 @@ license=('MPL-2.0')
 # -------- # 
 # Specific #
 # -------- #
-pkgver=0.0.7
+PKGVER_STUB=0.0.8
+pkgver=0.0.8.2024_06_24T06_28_02_05_00
 pkgrel=1
-pkgname="$PACKAGE_NAME_STUB-git"
-conflicts=("$PACKAGE_NAME_STUB" "$PACKAGE_NAME_STUB-local")
+pkgname="$PACKAGE_NAME_STUB-local"
+conflicts=("$PACKAGE_NAME_STUB" "$PACKAGE_NAME_STUB-git")
 makedepends=('git' 'python-setuptools' 'python-pipenv')
-source=("git+https://github.com/pvshvp-oss/$PROJECT_NAME")
-sha256sums=('SKIP')
+source=()
+sha256sums=()
 prepare() {
-    export PROJECT_DIRECTORY="${srcdir}/$PROJECT_NAME"
+    export PROJECT_DIRECTORY="$(dirname -- "$(dirname -- "$(dirname -- "$(dirname -- "$(pwd)")")")")"
 }
 pkgver() {
-    (   cd "${srcdir}/$PROJECT_NAME"
-        set -o pipefail
-        git describe --long 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' ||
-        printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
-    )
+    echo "$PKGVER_STUB.$(date -Is | tr '\:\-\+\;' '_')"
 }
 # -------- #
 

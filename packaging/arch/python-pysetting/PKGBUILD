@@ -14,19 +14,15 @@ license=('MPL-2.0')
 # -------- # 
 # Specific #
 # -------- #
-PKGVER_STUB=0.0.7
-pkgver=0.0.7
+pkgver=0.0.8
 pkgrel=1
-pkgname="$PACKAGE_NAME_STUB-local"
-conflicts=("$PACKAGE_NAME_STUB" "$PACKAGE_NAME_STUB-git")
+pkgname="$PACKAGE_NAME_STUB"
+conflicts=("$PACKAGE_NAME_STUB-local" "$PACKAGE_NAME_STUB-git")
 makedepends=('git' 'python-setuptools' 'python-pipenv')
-source=()
-sha256sums=()
+source=("${url}/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('SKIP')
 prepare() {
-    export PROJECT_DIRECTORY="$(dirname -- "$(dirname -- "$(dirname -- "$(pwd)")")")"
-}
-pkgver() {
-    echo "$PKGVER_STUB.$(date -Is | tr '\:\-\+\;' '_')"
+    export PROJECT_DIRECTORY="${srcdir}/$PROJECT_NAME-${pkgver}"
 }
 # -------- #
 
