@@ -1,0 +1,34 @@
+python3-pysetting-local (0.0.7) unstable; urgency=medium
+
+  [ shivanandvp ]
+  * First commit
+  * First build
+  * naming changes
+  * Fix namespace packages
+  * flatten package
+  * Documentation changes
+  * Documentation fixes
+  * More documentation fixes
+
+  [ Shivanand Pattanshetti ]
+  * Update .gitlab-ci.yml file
+  * Update .gitlab-ci.yml file
+
+  [ shivanandvp ]
+  * Fix docs
+  * Use git for Fenix libraries
+  * Rebuild
+  * chore: :truck: Rename project and move to author's profile
+  * chore: :truck: Change directory structure to avoid naming conflicts
+  * build: :bookmark: Bump version
+
+  [ shiva-patt-oss ]
+  * chore: :truck: Change username and email
+
+  [ pvshvp-oss ]
+  * Bump versions
+  * Update info
+  * build: :arrow_up: Update python dependency version
+  * build: :truck: Reorganize to make room for other packaging formats
+
+ -- shivanandvp <pvshvp.oss@gmail.com>  Mon, 24 Jun 2024 15:30:02 +0300

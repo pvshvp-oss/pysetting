@@ -1,0 +1,23 @@
+Source: python3-pysetting-local
+Section: python
+Priority: optional
+Maintainer: pvshvp <pvshvp.oss@gmail.com>
+Build-Depends: debhelper (>=12~),
+               devscripts,
+               lintian,
+               dh-python,
+               python3-all,
+               python3-setuptools,
+               git,
+               curl
+
+
+Package: python3-pysetting-local
+Architecture: all
+Homepage: https://github.com/pvshvp-oss/pysetting
+Depends: python3 (>= 3.11),
+         ${python:Depends},
+         ${misc:Depends}
+Conflicts: python3-pysetting, python3-pysetting-git
+Provides: python3-pysetting
+Description: A python library for parsing and storing settings and configurations.

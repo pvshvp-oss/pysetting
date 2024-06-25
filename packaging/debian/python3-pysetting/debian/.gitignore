@@ -1,0 +1,7 @@
+/.debhelper
+/debhelper-build-stamp
+/files
+/python3-pysetting*/
+/*.debhelper.log
+/*.postrm.debhelper
+/*.substvars
