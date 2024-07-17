@@ -1,3 +1,11 @@
+python3-pysetting (0.0.8) unstable; urgency=medium
+
+  [ RadxaPanda ]
+  * feat: add debian packaging (#1)
+  * build: :truck: Add Debian build workflow
+
+ -- shivanandvp <pvshvp.oss@gmail.com>  Thu, 11 Jul 2024 23:22:57 +0300
+
 python3-pysetting (0.0.7) unstable; urgency=medium
 
   [ shivanandvp ]
