@@ -37,19 +37,26 @@ git clone git@github.com:pvshvp-oss/pysetting.git
 
 ### Arch Linux
 
-Change to the project directory (`cd pyrunning`) and run any of the below scripts:
+Change to the project directory (`cd pysetting`) and run any of the below scripts:
 - `sh packaging/arch/setup.sh <MODE>`: Builds and installs a package
 - `sh packaging/arch/build-package.sh <MODE>`: Just builds a package without installing it locally
 - `sh packaging/arch/install-package.sh <MODE>`: Just installs a package locally, except if no built package is detected, a package is built.
+
+where `<MODE>` can be one of the below
+ 1. `local`: Selects *pysetting-local* from the local project that you have cloned already.
+ 2. `git`: Selects *pysetting-git* from the latest git commit. **Note** - Not available for Debian.
+ 3. `stable`: Selects *pysetting* from the git tag corresponding to the [`pkgver` specified in the PKGBUILD](https://github.com/pvshvp-oss/pysetting/blob/main/packaging/pysetting/PKGBUILD#L17). If `pkgver=0.1.2`, then the git tag `v0.1.2` is used for packaging. 
+
+> **Note**: Any additional parameters passed to the above scripts are automatically sent to `makepkg` or `pacman` (whichever is applicable).
  
 ### Debian
 
-Change to the project directory (`cd pyrunning`) and run any of the below scripts:
+Change to the project directory (`cd pysetting`) and run any of the below scripts:
 - `sh packaging/debian/build-package.sh <MODE>`: Just builds a package without installing it locally
 
 where `<MODE>` can be one of the below
-     1. `local`: Selects *pysetting-local* from the local project that you have cloned already.
-     2. `git`: Selects *pysetting-git* from the latest git commit. **Note** - Not available for Debian.
-     3. `stable`: Selects *pysetting* from the git tag corresponding to the [`pkgver` specified in the PKGBUILD](https://github.com/pvshvp-oss/pysetting/blob/main/packaging/pysetting/PKGBUILD#L17). If `pkgver=0.1.2`, then the git tag `v0.1.2` is used for packaging. 
+ 1. `local`: Selects *python3-pysetting-local* from the local project that you have cloned already.
+ <!-- 2. `git`: Selects *pysetting-git* from the latest git commit. **Note** - Not available for Debian. -->
+ 1. `stable`: Selects *python3-pysetting* version available from the the latest git tag. 
      
-> **Note**: Any additional parameters passed to the above scripts are automatically sent to `makepkg` or `pacman` (whichever is applicable).
+
