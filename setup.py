@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pysetting",
-    version="0.0.8",
+    version="0.0.9",
     author="pvshvp",
     author_email="pvshvp.oss@gmail.com",
     description="A python library for parsing and storing settings and configurations.",
@@ -19,7 +19,7 @@ setuptools.setup(
         'Tracker': 'https://github.com/pvshvp-oss/pysetting/issues',
     },
     classifiers=[
-        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
         "Development Status :: 4 - Beta",
         "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
         "Operating System :: POSIX :: Linux",
@@ -31,5 +31,5 @@ setuptools.setup(
         "Topic :: System :: Systems Administration",
         "Topic :: Utilities",
     ],
-    python_requires='>=3.10'
+    python_requires='>=3.13'
 )

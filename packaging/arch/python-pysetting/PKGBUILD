@@ -5,7 +5,7 @@
 PROJECT_NAME="pysetting"
 PACKAGE_NAME_STUB="python-$PROJECT_NAME"
 provides=("$PACKAGE_NAME_STUB")
-depends=('python>=3.12')
+depends=('python>=3.13')
 arch=('any')
 pkgdesc='A python library for parsing and storing settings and configurations.'
 url="https://github.com/pvshvp-oss/$PROJECT_NAME"
@@ -14,7 +14,7 @@ license=('MPL-2.0')
 # -------- # 
 # Specific #
 # -------- #
-pkgver=0.0.8
+pkgver=0.0.9
 pkgrel=1
 pkgname="$PACKAGE_NAME_STUB"
 conflicts=("$PACKAGE_NAME_STUB-local" "$PACKAGE_NAME_STUB-git")
