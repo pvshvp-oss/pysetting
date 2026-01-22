@@ -1,4 +1,4 @@
-python3-pysetting-local (0.0.9) unstable; urgency=low
+python3-pysetting-local (0.0.10) unstable; urgency=low
 
   [ shivanandvp ]
   * fix: rebuild for updated python
